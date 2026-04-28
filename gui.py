@@ -1,5 +1,3 @@
-# --- START OF FILE gui.py ---
-
 import tkinter as tk
 from tkinter import ttk, messagebox
 import cv2
@@ -1984,5 +1982,3 @@ class CleanroomGUI:
                 logger.info("Fullscreen decision overlay closed")
         except Exception as e:
             logger.error(f"Error closing fullscreen decision: {e}", exc_info=True)
-
-# --- END OF FILE gui.py ---

@@ -1,5 +1,3 @@
-# --- START OF FILE worker_management.py ---
-
 import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog
 import logging
@@ -1204,4 +1202,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# --- END OF FILE worker_management.py ---
