@@ -1,5 +1,3 @@
-# --- START OF FILE rfid_reader.py ---
-
 import serial
 import threading
 import time
@@ -488,4 +486,3 @@ if __name__ == "__main__":
         if 'reader' in locals() and reader:
              reader.stop()
         print("Test completed")
-# --- END OF FILE rfid_reader.py ---

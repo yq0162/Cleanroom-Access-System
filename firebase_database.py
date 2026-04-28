@@ -1,5 +1,3 @@
-# --- START OF FILE firebase_database.py ---
-
 import os
 import time
 import json
@@ -1281,4 +1279,3 @@ DO NOT share this file - it contains sensitive credentials!
         except Exception as e:
             logger.error(f"Error importing offline data: {e}", exc_info=True)
             return False
-# --- END OF FILE firebase_database.py ---

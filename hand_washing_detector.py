@@ -1,5 +1,3 @@
-# --- START OF FILE hand_washing_detector.py ---
-
 import cv2
 import numpy as np
 import os
@@ -969,5 +967,3 @@ if __name__ == "__main__":
     finally:
         detector.stop()
         print("Test completed")
-
-# --- END OF FILE hand_washing_detector.py --- 

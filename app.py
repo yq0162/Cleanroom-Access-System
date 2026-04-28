@@ -1,5 +1,3 @@
-# --- START OF FILE app.py ---
-
 import tkinter as tk
 from tkinter import messagebox, ttk, simpledialog
 import cv2
@@ -1797,5 +1795,3 @@ if __name__ == "__main__":
     finally:
          logging.shutdown() # Ensure logs are flushed
          logger.info("--- Cleanroom Access System Stopped ---")
-
-# --- END OF FILE app.py ---

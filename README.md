@@ -67,8 +67,9 @@ flowchart LR
 | `[firebase_database.py](firebase_database.py)`                 | Firestore CRUD, offline mirror, gown readiness logic.                             |
 | `[config.py](config.py)`                                       | YAML load/validate and defaults for `cleanroom_config.yaml`.                      |
 | `[security.py](security.py)`                                   | Security-focused logging helpers.                                                 |
-| `[models/HailoDetectionYolo.py](models/HailoDetectionYolo.py)` | Hailo post-processor expected by the DeGirum zoo.                                 |
-| `[models/hailo_labels.json](models/hailo_labels.json)`         | Label map for Hailo outputs.                                                      |
+| `[models/HailoDetectionYolo.py](models/HailoDetectionYolo.py)` | Hailo post-processor expected by the DeGirum zoo. (place in `models/` — gitignored) |
+| `[models/hailo_labels.json](models/hailo_labels.json)`         | Label map for Hailo outputs. (place in `models/` — gitignored)                    |
+| `[tools/fix_face_recognition.py](tools/fix_face_recognition.py)` | Diagnostic and repair tool for the face recognition database. Run from project root: `python tools/fix_face_recognition.py` |
 
 
 ---
