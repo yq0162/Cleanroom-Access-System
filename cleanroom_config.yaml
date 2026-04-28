@@ -1,0 +1,100 @@
+camera:
+  enable_mock: false
+  format: RGB888
+  resolution:
+  - 750
+  - 950
+  auto_rotate: false                # Unified auto-rotate setting for both camera types (Raspberry Pi and webcam)
+database:
+  credential_path: firebase-credentials.json
+  enable_offline: false
+gui:
+  approved_display_seconds: 5.0
+  denied_display_seconds: 5.0
+  fullscreen: true
+  max_video_height: 1280
+  max_video_width: 720
+  show_video_in_gui: false
+  theme: default
+  window_size: 720x1280
+hand_washing:
+  enable_mock: false
+  face_detection_interval: 0.5
+  min_washing_time: 30.0
+  quality_thresholds:
+    bad: 0.0
+    good: 30.0
+    moderate: 15.0
+ppe_detection:
+  enable_locked_mechanism: false   #set false to disable PPE result locking after 5 consecutive frames
+  required_classes:
+    gloves:
+      class_names:
+      - Gloves
+      negative_classes:
+      - Gloves_Absent
+      incomplete_classes: []
+      enabled: true
+      min_confidence: 0.4
+      required_consecutive_frames: 3
+      required_count: 2
+    gown:
+      class_names:
+      - Gown
+      negative_classes:
+      - Gown_Absent
+      incomplete_classes:
+      - Gown_Incomplete
+      enabled: true
+      min_confidence: 0.4
+      required_consecutive_frames: 3
+      required_count: 1
+    hairnet:
+      class_names:
+      - Hairnet
+      negative_classes:
+      - Hairnet_Absent
+      incomplete_classes:
+      - Hairnet_Incomplete
+      enabled: true
+      min_confidence: 0.4
+      required_consecutive_frames: 2
+      required_count: 1
+    mask:
+      class_names:
+      - Mask
+      negative_classes:
+      - Mask_Absent
+      incomplete_classes:
+      - Mask_Incomplete
+      enabled: true
+      min_confidence: 0.5
+      required_consecutive_frames: 3
+      required_count: 1
+rfid:
+  baudrate: 9600
+  enable_mock: false
+  enable_mock_fallback: false
+  # Windows: e.g. COM3; Linux: e.g. /dev/ttyUSB0 or /dev/ttyACM0
+  port: COM3
+  read_cooldown: 2.0
+  timeout: 1.0
+rules:
+  gown_lifetime_days: 7
+  retry_window_minutes: 5
+system:
+  debug_mode: false
+  log_file: cleanroom_app.log
+  log_level: INFO
+  security_log_file: security.log
+yolo:
+  model_path: models/bestsmall.onnx
+  fallback_model: yolov8n.pt
+  confidence_threshold: 0.25
+  detection_stability: 3
+  detection_timeout_seconds: 5.0
+  enable_mock: false
+hailo:
+  enable: true
+  model_name: yolov11s
+  zoo_path: models

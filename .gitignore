@@ -1,0 +1,38 @@
+# Secrets and local credentials (never commit)
+firebase-credentials.json
+serviceAccountKey.json
+*.pem
+.env
+.env.*
+
+# Runtime logs
+*.log
+
+# Biometric / local identity data
+face_encodings.pkl
+face_encodings_backup.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+ENV/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Large model weights (supply separately; see README)
+*.onnx
+*.pt
+*.pth
+*.hef
+
+# Optional: keep small JSON zoo configs tracked; ignore local exports
+cleanroom_data_backup.json

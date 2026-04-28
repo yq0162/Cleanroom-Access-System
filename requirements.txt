@@ -1,0 +1,11 @@
+numpy
+opencv-python-headless
+ultralytics
+degirum
+PyYAML
+pyserial
+picamera2
+firebase-admin
+Pillow
+# Optional (hand-wash face identification): install on supported platforms
+# face_recognition
